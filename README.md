@@ -1,2 +1,2 @@
-# VSPSProjectTemplate
-PowerShell Project Template for VisualStudio
+$safeprojectname$ README
+========================
