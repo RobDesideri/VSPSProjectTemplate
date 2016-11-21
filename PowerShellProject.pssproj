@@ -41,7 +41,6 @@
     <Compile Include="ScriptAnalyzerSettings.psd1" />
     <Compile Include="src\$safeprojectname$.psd1" />
     <Compile Include="src\$safeprojectname$.psm1" />
-    <Compile Include="src\Depends.psd1" />
     <Compile Include="test\$safeprojectname$.private.tests.ps1" />
     <Compile Include="test\$safeprojectname$.public.tests.ps1" />
     <Compile Include="test\$safeprojectname$.tests.ps1" />
@@ -49,6 +48,7 @@
     <Compile Include="test\TestDepends.psd1" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Depends.psd1" />
     <Content Include="InstallPSDepend.ps1" />
     <Content Include="LICENSE.txt" />
     <Content Include="README.md" />

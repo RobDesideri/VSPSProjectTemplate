@@ -29,7 +29,6 @@
           <Folder Name="private" TargetFolderName="private" />
           <Folder Name="public" TargetFolderName="public" />
         </Folder>
-        <ProjectItem ReplaceParameters="false" TargetFileName="Depends.psd1">Depends.psd1</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.psd1">PowerShellProject.psd1</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.psm1">PowerShellProject.psm1</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="README.md">README.md</ProjectItem>
@@ -43,6 +42,7 @@
         <ProjectItem ReplaceParameters="false" TargetFileName="TestDepends.psd1">TestDepends.psd1</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName="InstallPSDepend.ps1">InstallPSDepend.ps1</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Depends.psd1">Depends.psd1</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="LICENSE.txt">LICENSE.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="README.md">README.md</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="ReleaseNotes.md">ReleaseNotes.md</ProjectItem>
