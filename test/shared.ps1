@@ -1,6 +1,11 @@
-# Import testing resources
-& "$PSScriptRoot\shared.ps1"
-$fp = "$PSScriptRoot\..\src\script\public\*.ps1"
+#Check dependencies
+& "$PSScriptRoot\InstallTestingDepends.ps1"
+
+#Import PowerShellTestingHelpers module
+Import-Module "$PSScriptRoot\lib\PowerShellTestingHelpers" -Global
+
+#Import data files
+$fp = "$PSScriptRoot\data\*.ps1"
 $fpCollection = @( Get-ChildItem -Path $fp -ErrorAction SilentlyContinue )
 Foreach($import in @($fpCollection))
 {
@@ -11,15 +16,5 @@ Foreach($import in @($fpCollection))
 	Catch
 	{
 		Write-Error -Message "Failed to import function $($import.fullname): $_"
-	}
-}
-
-#Test begin!
-
-Describe "$projectname$ Public Functions" {
-	Context "Function Exists" {
-		It "Should Return" {
-		
-		}
 	}
 }

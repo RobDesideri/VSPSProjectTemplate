@@ -30,6 +30,7 @@
     <Folder Include="docs\" />
     <Folder Include="test\" />
     <Folder Include="test\lib" />
+    <Folder Include="test\data" />
     <Folder Include="src\" />
     <Folder Include="src\docs\" />
     <Folder Include="src\lib\" />

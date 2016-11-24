@@ -34,6 +34,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="README.md">README.md</ProjectItem>
       </Folder>
       <Folder Name="test" TargetFolderName="test">
+        <Folder Name="data" TargetFolderName="data" />
         <Folder Name="lib" TargetFolderName="lib" />
         <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.private.tests.ps1">PSP.private.tests.ps1</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.public.tests.ps1">PSP.public.tests.ps1</ProjectItem>
