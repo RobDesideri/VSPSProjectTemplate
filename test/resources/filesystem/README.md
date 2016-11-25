@@ -1,1 +1,1 @@
-Insert some random files /folders for testing purpose.
+Insert some random files / folders for testing purpose.
