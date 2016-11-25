@@ -34,8 +34,18 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="README.md">README.md</ProjectItem>
       </Folder>
       <Folder Name="test" TargetFolderName="test">
-        <Folder Name="data" TargetFolderName="data" />
         <Folder Name="lib" TargetFolderName="lib" />
+        <Folder Name="resources" TargetFolderName="resources">
+          <Folder Name="data" TargetFolderName="data">
+            <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+          </Folder>
+          <Folder Name="filesystem" TargetFolderName="filesystem">
+            <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+          </Folder>
+          <Folder Name="mock" TargetFolderName="mock">
+            <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+          </Folder>
+        </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.private.tests.ps1">PSP.private.tests.ps1</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.public.tests.ps1">PSP.public.tests.ps1</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.tests.ps1">PSP.tests.ps1</ProjectItem>

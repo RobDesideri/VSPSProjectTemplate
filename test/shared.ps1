@@ -5,7 +5,8 @@
 Import-Module "$PSScriptRoot\lib\PowerShellTestingHelpers" -Global
 
 #Import data files
-$fp = "$PSScriptRoot\data\*.ps1"
+$fp = "$PSScriptRoot\resources\data\*.ps1"
+$fp = "$PSScriptRoot\resources\mock\*.ps1"
 $fpCollection = @( Get-ChildItem -Path $fp -ErrorAction SilentlyContinue )
 Foreach($import in @($fpCollection))
 {
