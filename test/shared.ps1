@@ -4,18 +4,22 @@
 #Import PowerShellTestingHelpers module
 Import-Module "$PSScriptRoot\lib\PowerShellTestingHelpers" -Global
 
-#Import data files
-$fp = "$PSScriptRoot\resources\data\*.ps1"
-$fp = "$PSScriptRoot\resources\mock\*.ps1"
-$fpCollection = @( Get-ChildItem -Path $fp -ErrorAction SilentlyContinue )
-Foreach($import in @($fpCollection))
+function import ($FilePath)
 {
-	Try
+    $fpCollection = @( Get-ChildItem -Path $FilePath -ErrorAction SilentlyContinue )
+	Foreach($import in @($fpCollection))
 	{
-		. $import.FullName
-	}
-	Catch
-	{
-		Write-Error -Message "Failed to import function $($import.fullname): $_"
+		Try
+		{
+			. $import.FullName
+		}
+		Catch
+		{
+			Write-Error -Message "Failed to import function $($import.fullname): $_"
+		}
 	}
 }
+
+#Import data files
+import -FilePath "$PSScriptRoot\resources\data\*.ps1"
+import -FilePath "$PSScriptRoot\resources\mock\*.ps1"
