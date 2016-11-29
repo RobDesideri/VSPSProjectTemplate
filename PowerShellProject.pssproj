@@ -31,6 +31,7 @@
     <Folder Include="test\" />
     <Folder Include="test\lib" />
     <Folder Include="test\resources" />
+    <Folder Include="test\resources\constant" />
     <Folder Include="test\resources\data" />
     <Folder Include="test\resources\filesystem" />
     <Folder Include="test\resources\mock" />
@@ -58,6 +59,7 @@
     <Content Include="README.md" />
     <Content Include="ReleaseNotes.md" />
     <Content Include="src\README.md" />
+    <Content Include="test\resources\constant\README.md" />
     <Content Include="test\resources\data\README.md" />
     <Content Include="test\resources\filesystem\README.md" />
     <Content Include="test\resources\mock\README.md" />

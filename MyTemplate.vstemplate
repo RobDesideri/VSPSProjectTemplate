@@ -36,6 +36,9 @@
       <Folder Name="test" TargetFolderName="test">
         <Folder Name="lib" TargetFolderName="lib" />
         <Folder Name="resources" TargetFolderName="resources">
+          <Folder Name="constant" TargetFolderName="constant">
+            <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+          </Folder>
           <Folder Name="data" TargetFolderName="data">
             <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
           </Folder>

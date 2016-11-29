@@ -23,3 +23,4 @@ function import ($FilePath)
 #Import data files
 import -FilePath "$PSScriptRoot\resources\data\*.ps1"
 import -FilePath "$PSScriptRoot\resources\mock\*.ps1"
+import -FilePath "$PSScriptRoot\resources\constant\*.ps1"
