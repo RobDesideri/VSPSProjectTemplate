@@ -56,9 +56,6 @@
   <ItemGroup>
     <Content Include="Depends.psd1" />
     <Content Include="InstallPSDepend.ps1" />
-    <Content Include="LICENSE.txt" />
-    <Content Include="README.md" />
-    <Content Include="ReleaseNotes.md" />
     <Content Include="src\README.md" />
     <Content Include="test\resources\constant\README.md" />
     <Content Include="test\resources\data\README.md" />
