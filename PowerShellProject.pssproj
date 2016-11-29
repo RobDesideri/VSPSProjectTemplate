@@ -50,6 +50,7 @@
     <Compile Include="test\$safeprojectname$.public.tests.ps1" />
     <Compile Include="test\$safeprojectname$.tests.ps1" />
     <Compile Include="test\InstallTestingDepends.ps1" />
+    <Compile Include="test\SharedSetup.ps1" />
     <Compile Include="test\TestDepends.psd1" />
   </ItemGroup>
   <ItemGroup>

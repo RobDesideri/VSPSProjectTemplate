@@ -1,5 +1,5 @@
 # Import testing helpers dependencies
-& "$PSScriptRoot\shared.ps1"
+& "$PSScriptRoot\SharedSetup.ps1"
 
 $ModuleManifestName = '$safeprojectname$.psd1'
 $ModuleManifestPath = "$PSScriptRoot\..\src\$ModuleManifestName"

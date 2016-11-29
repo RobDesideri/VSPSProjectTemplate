@@ -1,5 +1,5 @@
 # Import testing resources
-& "$PSScriptRoot\shared.ps1"
+& "$PSScriptRoot\SharedSetup.ps1"
 $fp = "$PSScriptRoot\..\src\script\public\*.ps1"
 $fpCollection = @( Get-ChildItem -Path $fp -ErrorAction SilentlyContinue )
 Foreach($import in @($fpCollection))

@@ -53,6 +53,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.public.tests.ps1">PSP.public.tests.ps1</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.tests.ps1">PSP.tests.ps1</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="InstallTestingDepends.ps1">InstallTestingDepends.ps1</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="SharedSetup.psd1">SharedSetup.psd1</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="TestDepends.psd1">TestDepends.psd1</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName="InstallPSDepend.ps1">InstallPSDepend.ps1</ProjectItem>
